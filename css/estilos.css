@@ -143,6 +143,7 @@ h2{
 .aside{  
     flex:1 1 auto;
     margin: 10px 5px 10px 0;
+    height: 100x;
 }
 .aside img{
     width: 100%;
@@ -173,6 +174,26 @@ h4{
     letter-spacing: 2px;
 }
 /*hace columna al ser menos pixeles en la pantalla*/
+@media all and (max-width: 1120px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+
+    }
+    h1{
+        font-size: 15px;
+    }
+    .texto-principal{
+        height: 450px;
+    }
+}
 @media all and (max-width: 800px){
     .section{
         flex-direction: column;
@@ -189,10 +210,18 @@ h4{
         flex-direction: column;
     }
 }
-@media all and (max-width: 600px){
+@media all and (max-width: 762px){
     .articulos{
         flex-direction: column;
     } 
+}
+@media all and (max-width:650px){
+    .off{
+        display: none;
+    }
+    .nav a {
+        font-size: 25px;
+    }
 }
 @media all and (max-width:400px){
     .aside{
